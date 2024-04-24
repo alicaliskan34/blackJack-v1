@@ -159,12 +159,12 @@ bahisYapBtn.addEventListener('click', () => {
         bahisYapBtn.disabled = true;
         bahisInput.value = '';
         bahisInput.disabled = true;
-        winSound.stop();
-        loseSound.stop();
-        bjSound.stop();
-        winSound.currentTime=0;
-        loseSound.currentTime=0;
-        bjSound.currentTime=0;
+        // winSound.stop();
+        // loseSound.stop();
+        // bjSound.stop();
+        // winSound.currentTime=0;
+        // loseSound.currentTime=0;
+        // bjSound.currentTime=0;
 
         rePlay();
         if(oyuncuSayiToplam <1){
