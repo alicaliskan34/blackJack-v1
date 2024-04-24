@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack v2 | Ali ÇALIŞKAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link rel="icon" href="blackjack-hand-spades-black-jack-600nw-2122961363.jpg">
+</head>
+
+<body>
+
+   
+
+    <!-- OYUNCU KARTLAR -->
+    <div class="cardDiv">
+        <!-- <img src="cards/2-H.png" alt="" class="card">
+        <img src="cards/2-H.png" alt="" class="card"> -->
+    </div>
+
+    <div class="oyuncuKartToplami">0</div>
+
+    <!-- table alanı -->
+    <img src="cards/bjtable.png" alt="" class="table">
+
+    <!-- BAKİYE VE BAHİS ALANI -->
+    <div class="bakiyeText"> <i class="fa-solid fa-money-bill"></i>
+        <div><span class="head">Balance</span> <br>
+            <span class="betText"></span>
+        </div>
+    </div>
+    <div class="bahisText">
+        <span class="head">Total Bet</span>
+        <span class="bahisMiktari">0</span>
+    </div>
+
+    <!-- KURPİYER ALAN -->
+    <img src="cards/kurpiyer.png" alt="" class="kurpiyerImg">
+
+    <!-- KART BUTTONLAR -->
+    
+    <div class="buttonsArea">
+        <button class="hit" id="buttonSettings">
+            <i class="fa-solid fa-plus"></i>
+            KART İSTE
+        </button>
+        <button class="stand" id="buttonSettings">
+            <i class="fa-solid fa-minus"></i>
+            KAL
+        </button>
+    </div>
+
+    <!-- KURPİYER KARTLAR -->
+    <div class="cardDivCourpier">
+        <img src="cards/BACK.png" alt="" class="kurpiyerKart">
+        <!-- <img src="cards/2-H.png" alt="" class="kurpiyerKart"> -->
+    </div>
+
+    <div class="kurpiyerKartToplamText">0</div>
+    
+    <!-- BAHİS ALANI -->
+    <input type="number" class="bahisInput">
+    <button class="css-button-sliding-to-left--black" id="bahisYapBtn">Bahis Yap</button>
+
+    <!-- AUDİO SESLERİ  -->
+    <audio src="audio/win.mp3" id="win" class="active"></audio>
+    <audio src="audio/lose.mp3" id="lose" class=""></audio>
+    <audio src="audio/blackjack.mp3" id="bjSound" class=""></audio>
+</body>
+<script src="script.js"></script>
+
+</html>
